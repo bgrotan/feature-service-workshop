@@ -46,10 +46,10 @@ Test-data (Administrative enheter) for formålet er hentet fra Geonorge.
 * [PostgreSQL](https://www.postgresql.org/)
 * [PostGIS](https://www.postgis.net)
 
-  ## Disclaimer
+## Disclaimer
 
-  Denne workshopen er kun en introduksjon, for å komme i gang med utvikling og testing av OGC API Features på egen maskin.
-  Det er ikke anbefalt å bruke kurs-oppsett i et produksjonsmiljø.
+Denne workshopen er kun en introduksjon, for å komme i gang med utvikling og testing av OGC API Features på egen maskin.
+Det er ikke anbefalt å bruke kurs-oppsett i et produksjonsmiljø.
   
   Sett deg inn i proxy-settings, bruk av miljøvariabler (.env) for setting av admin-passord, etabler rullering av hemmeligheter m.m.
   Kanskje har din organisasjon en egen PostgreSQL-server du kan benytte når du kommer tilbake.
