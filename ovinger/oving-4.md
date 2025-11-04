@@ -5,6 +5,7 @@ I denne øvingen skal du gjøre deg kjent med HTML- og JSON-grensesnittene som O
 ## 4.1 Gjenbruk docker-compose.yml fra øving 3 
 
 Features-API har innebygget "paging", dvs at ikke alle objekter vil bli returnert med en gang.
+
 Dette sparer serveren for unødvendig belastning, samtidig som at klienten (nettsiden eller qgis f.eks.)
 vil få data raskere, men må spørre flere ganger for å få alt.
 
@@ -18,4 +19,4 @@ Geoserver bruker Freemarker som template-motor, både for WMS-tjenester og for O
 
 Om du vil ...
 
-Neste: (oving-5.md)
+Neste: [Øving 5](oving-5.md)
