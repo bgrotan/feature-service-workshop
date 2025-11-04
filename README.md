@@ -1,7 +1,7 @@
 # OGC API Features workshop med Geoserver
 
 Denne workshopen er for å komme i gang med å etablere tjenester som OGC APIFeatures med [Geoserver](https://www.geoserver.org),
-og gjør deg kjent med hvordan den nye [https://ogcapi.ogc.org/features/](OGC API Features)-standarden fungerer.
+og gjør deg kjent med hvordan den nye [OGC API Features](https://ogcapi.ogc.org/features/) -standarden fungerer.
 
 Øvingene tar deg gjennom følgende steg:
 * Få opp en kjørende instans av Geoserver med Docker
