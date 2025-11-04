@@ -56,4 +56,4 @@ Admin-passord settes som miljøvariabel GEOSERVER_ADMIN_PASSWORD (se docker-comp
 
 Du kan også teste ut 'docker-compose up" uten å angi '-d'. Bruk ctrl-c for å avslutte.
 
-Neste: (oving-2.md)
+Neste: [Øving 2](oving-2.md)
