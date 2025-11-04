@@ -9,7 +9,8 @@ og gjør deg kjent med hvordan den nye OGC API Features-standarden fungerer.
 * Konsepter i Geoserver (Datastores m.m.)
 * Laste inn data til database og tilgjengeliggjøre som OGC API Features
 * Utforske data via OGC API Features - html og json
-* UTforske OGC API Features via QGIS (frivillig)
+* Utforske OGC API Features via QGIS (frivillig)
+* Utforske OGC API Features via Python (frivillig)
 
 ## Datasett
 
