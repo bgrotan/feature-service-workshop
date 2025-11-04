@@ -27,10 +27,11 @@ Test-data (Administrative enheter) for formålet er hentet fra Geonorge.
 ## Øvinger
 
 * [Øving 1](ovinger/oving-1.md) Få opp Geoserver med bruk av Docker (docker-compose)
-* [Øving 2](ovinger/oving-2.md)
-* [Øving 3](ovinger/oving-3.md)
-* [Øving 4](ovinger/oving-4.md)
-* [Øving 5](ovinger/oving-5.md)
+* [Øving 2](ovinger/oving-2.md) Utvid Geoserver med støtte for OGC API Feature
+* [Øving 3](ovinger/oving-3.md) Last inn kurs-data
+* [Øving 4](ovinger/oving-4.md) Utforsk OGC API Features web-grensesnitt (html/json)
+* [Øving 5](ovinger/oving-5.md) Utforsk OGC API Features med QGIS Desktop (bonus)
+* [Øving 6](ovinger/python.md) Utforsk OGC API Features med Python (bonus)
 
  ## Løsningsforslag
 
@@ -39,6 +40,7 @@ Test-data (Administrative enheter) for formålet er hentet fra Geonorge.
 * [Øving 3](losninger/oving-3.md)
 * [Øving 4](losninger/oving-4.md)
 * [Øving 5](losninger/oving-5.md)
+* [Øving 6](losninger/python.md)
 
 ## Ressurser
 
