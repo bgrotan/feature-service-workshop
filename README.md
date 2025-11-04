@@ -18,8 +18,8 @@ Test-data (Administrative enheter) for formålet er hentet fra Geonorge.
 
 ## Avhengigheter
 
-* Docker
-* Tekstbehandler / IDE (f.eks. Notepad++ for Windows-brukere)
+* **Docker**
+* **Tekstbehandler / IDE** (f.eks. Notepad++ for Windows-brukere)
 * QGIS Desktop (anbefalt)
 * Python 3.x (frivillig)
 * GIT (frivillig), kan laste ned zip-fil fra github
