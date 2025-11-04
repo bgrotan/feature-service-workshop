@@ -5,8 +5,8 @@ og gjør deg kjent med hvordan den nye OGC API Features-standarden fungerer.
 
 Øvingene tar deg gjennom følgende steg:
 * Få opp en kjørende instans av Geoserver med Docker
+* Konsepter i Geoserver
 * Installere plugins (OGC API Features) til Geoserver
-* Konsepter i Geoserver (Datastores m.m.)
 * Laste inn data til database og tilgjengeliggjøre som OGC API Features
 * Utforske data via OGC API Features - html og json
 * Utforske OGC API Features via QGIS (frivillig)
@@ -19,8 +19,9 @@ Test-data (Administrative enheter) for formålet er hentet fra Geonorge.
 ## Avhengigheter
 
 * Docker
+* Tekstbehandler / IDE (f.eks. Notepad++ for Windows-brukere)
 * QGIS Desktop (anbefalt)
-* Python 3.x (frivillig
+* Python 3.x (frivillig)
 * GIT (frivillig), kan laste ned zip-fil fra github
 
 ## Øvinger
