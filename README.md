@@ -26,7 +26,7 @@ Test-data (Administrative enheter) for formålet er hentet fra Geonorge.
 
 ## Øvinger
 
-* [Øving 1](ovinger/oving-1.md)
+* [Øving 1](ovinger/oving-1.md) Få opp Geoserver med bruk av Docker (docker-compose)
 * [Øving 2](ovinger/oving-2.md)
 * [Øving 3](ovinger/oving-3.md)
 * [Øving 4](ovinger/oving-4.md)
