@@ -20,3 +20,5 @@ Utforsk html-grensesnittet, og finn ut hvor mange objekter det er i det aktuelle
 du ønsker å laste inn, og sette max_antall til et tilstrekkelig høyt tall.
 
 Om du vil, kan du teste ut å lese ut data fra OGC API Features med (python.md).
+
+Neste: Opsjonell [øving med Python](python.md) 
