@@ -3,6 +3,14 @@
 Denne workshopen er for å komme i gang med å etablere tjenester som OGC APIFeatures med Geoserver,
 og gjør deg kjent med hvordan den nye OGC API Features-standarden fungerer.
 
+Øvingene tar deg gjennom følgende steg:
+* Få opp en kjørende instans av Geoserver med Docker
+* Installere plugins (OGC API Features) til Geoserver
+* Konsepter i Geoserver (Datastores m.m.)
+* Laste inn data til database og tilgjengeliggjøre som OGC API Features
+* Utforske data via OGC API Features - html og json
+* UTforske OGC API Features via QGIS (frivillig)
+
 ## Datasett
 
 Test-data (Administrative enheter) for formålet er hentet fra Geonorge.
