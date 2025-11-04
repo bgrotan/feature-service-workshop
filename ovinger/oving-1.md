@@ -5,7 +5,7 @@ du skal verifisere kjørende miljø gjennom nettleser og du skal legge til Featu
 
 ## 1.1 Etablere docker-compose.yml
 
-Lag deg en fil 'docker-compose.yml' med innholdet under. Bytt ut '<versjon>' med 2.28.2
+Lag deg en fil 'docker-compose.yml' med innholdet under. Bytt ut `<versjon>` med 2.28.2
 
 
 ```
