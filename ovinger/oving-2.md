@@ -19,12 +19,12 @@ INSTALL_EXTENSIONS og STABLE_EXTENSIONS
 
 Start/restart geoserver: 'docker-compose down geoserver' og `docker-compose up -d`
 
-* Verifiser at docker containeren kjører: 'docker ps'
-* Verifiser at geoserver er operativ ved å åpne nettleseren og gå til (http://localhost:8080/geoserver)
+* Verifiser at docker containeren kjører: `docker ps`
+* Verifiser at geoserver er operativ ved å åpne nettleseren og gå til [http://localhost:8080/geoserver](http://localhost:8080/geoserver)
 
 ## 2.3 Logg inn i geoserver og verifise at plugin/utvidelsen er lastet inn 
 
 (http://localhost:8080/geoserver/ogc/features/v1)
 
 
-Neste: (oving-3.md)
+Neste: [Øving 3](oving-3.md)
