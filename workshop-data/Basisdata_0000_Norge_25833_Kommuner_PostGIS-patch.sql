@@ -1,0 +1,1 @@
+alter table kommuner_95b1247e0400454f971d957671dc3744.kommune add primary key (objid);
