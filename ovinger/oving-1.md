@@ -7,7 +7,6 @@ du skal verifisere kjørende miljø gjennom nettleser og du skal legge til Featu
 
 Lag deg en fil 'docker-compose.yml' med innholdet under. Bytt ut `<versjon>` med 2.28.2
 
-
 ```
 version: '3.8'
 
@@ -26,16 +25,25 @@ services:
 
 ## 1.2 
 
-Start geoserver: `docker-compose up -d`
+Start geoserver: `docker compose up -d`
 
 * Verifiser at docker containeren kjører: 'docker ps'
 * Verifiser at geoserver er operativ ved å åpne nettleseren og gå til (http://localhost:8080/geoserver)
 
+Du kan også se på demo-data som følger med Geoserver.
+For de neste øvelsene, kan disse demo-dataene forvirre mer enn de hjelper.
+
+Da kan følgende legges inn som parameter til environment-delen av `docker-compose.yml`
+Dette er også anbefalt for **produksjonsmiljø**!
+```
+      # Do not clutter Geoserver with demonstration data
+      - SKIP_DEMO_DATA=true
+```
 ## 1.3
 
 Verifiser at du kan se geoserver-logger (fint til feilsøking)
 
-'docker-compose logs -f geoserver'
+'docker logs -f geoserver'
 
 (-f gir deg sanntids-logger, avslutt med ctrl-c og kjør samme kommando uten -f og se hva som skjer)
 
