@@ -24,6 +24,10 @@ Test-data (Administrative enheter) for formålet er hentet fra Geonorge.
 * Python 3.x (frivillig)
 * GIT (frivillig), kan laste ned zip-fil fra github
 
+## Test av installasjon
+
+Før du går i gang med øvingene, test at docker er satt opp riktig: `docker pull kartoza/postgis:13.0`
+
 ## Øvinger
 
 * [Øving 1](ovinger/oving-1.md) Få opp Geoserver med bruk av Docker (docker-compose)
