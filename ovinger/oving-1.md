@@ -12,7 +12,7 @@ version: '3.8'
 
 services:
   geoserver:
-    image: kartoza/geoserver:<versjon>
+    image: docker.osgeo.org/geoserver:<versjon>
     container_name: geoserver
     ports:
       - "8080:8080"
