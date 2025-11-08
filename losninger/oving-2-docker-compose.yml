@@ -11,6 +11,9 @@ services:
       - GEOSERVER_ADMIN_PASSWORD=geoserver
       # Do not clutter Geoserver with demonstration data
       - SKIP_DEMO_DATA=true
+      # Installing OGC API Features
+      - INSTALL_EXTENSIONS=true
+      - STABLE_EXTENSIONS=ogcapi-features
     volumes:
       # Optional: Persist GeoServer data directory to host
       - ./geoserver_data:/opt/geoserver/data_dir
