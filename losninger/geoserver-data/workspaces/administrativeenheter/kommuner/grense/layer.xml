@@ -1,0 +1,17 @@
+<layer>
+  <name>grense</name>
+  <id>LayerInfoImpl--e1a1781:19a63707062:-7e8d</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--e1a1781:19a63707062:-7e8f</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--e1a1781:19a63707062:-7e8e</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2025-11-08 13:19:15.210 UTC</dateCreated>
+  <dateModified>2025-11-08 13:21:51.574 UTC</dateModified>
+</layer>

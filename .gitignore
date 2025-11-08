@@ -1,0 +1,15 @@
+# IntelliJ
+.idea
+
+# Local environment file(s)
+.env
+**/.env
+
+# Postgres data store
+pg_data
+
+# Geoserver volume store
+geoserver_data
+
+# Our workshop docker-compose.yml
+docker-compose.yml
