@@ -10,3 +10,6 @@ pg_data
 
 # Geoserver volume store
 geoserver_data
+
+# Our workshop docker-compose.yml
+docker-compose.yml
