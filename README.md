@@ -16,17 +16,28 @@ og gjør deg kjent med hvordan den nye [OGC API Features](https://ogcapi.ogc.org
 
 Test-data (Administrative enheter) for formålet er hentet fra Geonorge.
 
-## Avhengigheter
+## TODO før workshop
+
+Før du kommer på workshop, sørg for at du har en kopi av denne workshopen på din lokale maskin og installert påkrevde avhengigheter.
+
+Om du har GIT, kan du klone denne kodebrønnen slik:
+```
+git clone https://github.com/bgrotan/feature-service-workshop.git
+cd feature-service-workshop
+```
+
+Før du går i gang med øvingene, test at docker er satt opp riktig: 
+```
+docker pull kartoza/postgis:13.0
+```
+
+### Avhengigheter
 
 * **Docker**
 * **Tekstbehandler / IDE** (f.eks. Notepad++ for Windows-brukere)
 * QGIS Desktop (anbefalt)
 * Python 3.x (frivillig)
 * GIT (frivillig), kan laste ned zip-fil fra github
-
-## Test av installasjon
-
-Før du går i gang med øvingene, test at docker er satt opp riktig: `docker pull kartoza/postgis:13.0`
 
 ## Øvinger
 
