@@ -41,7 +41,7 @@ Dette er også anbefalt for **produksjonsmiljø**!
 
 Verifiser at du kan se geoserver-logger (fint til feilsøking)
 
-'docker logs -f geoserver'
+`docker logs -f geoserver`
 
 (-f gir deg sanntids-logger, avslutt med ctrl-c og kjør samme kommando uten -f og se hva som skjer)
 
