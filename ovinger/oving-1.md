@@ -49,8 +49,8 @@ Verifiser at du kan se geoserver-logger (fint til feilsøking)
 
 http://localhost:8080/geoserver
 
-Default admin-brukernavn er 'admin'. Du kan velge et annet brukernavn ved å sette miljøvariabel.
-Admin-passord settes som miljøvariabel GEOSERVER_ADMIN_PASSWORD (se docker-compose.yml)
+Default admin-brukernavn er 'admin'. Du kan velge et annet brukernavn ved å sette miljøvariabel `GEOSERVER_ADMIN_USER`.
+Admin-passord settes som miljøvariabel `GEOSERVER_ADMIN_PASSWORD` (se docker-compose.yml)
 
 ## 1.5 Nyttige kommandoer
 
