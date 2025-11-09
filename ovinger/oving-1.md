@@ -8,8 +8,6 @@ du skal verifisere kjørende miljø gjennom nettleser og du skal legge til Featu
 Lag deg en fil 'docker-compose.yml' med innholdet under. Bytt ut `<versjon>` med 2.28.2
 
 ```
-version: '3.8'
-
 services:
   geoserver:
     image: docker.osgeo.org/geoserver:<versjon>
