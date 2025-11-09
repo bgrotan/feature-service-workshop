@@ -39,9 +39,9 @@ Før du går i gang med øvingene, test at docker er satt opp riktig: `docker pu
 
  ## Løsningsforslag
 
-* [Øving 1](losninger/oving-1.md)
-* [Øving 2](losninger/oving-2.md)
-* [Øving 3](losninger/oving-3.md)
+* [Øving 1](losninger/oving-1-docker-compose.yml)
+* [Øving 2](losninger/oving-2-docker-compose.yml)
+* [Øving 3](losninger/oving-3-docker-compose.yml)
 
 ## Ressurser
 
