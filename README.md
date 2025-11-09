@@ -39,7 +39,7 @@ docker pull kartoza/postgis:13.0
 
 * [Øving 1](ovinger/oving-1.md) Få opp Geoserver med bruk av Docker (docker-compose)
 * [Øving 2](ovinger/oving-2.md) Utvid Geoserver med støtte for OGC API Feature
-* [Øving 3](ovinger/oving-3.md) Last inn kurs-data
+* [Øving 3](ovinger/oving-3.md) Last inn kurs-data og etabler datasettet i Geoserver
 * [Øving 4](ovinger/oving-4.md) Utforsk OGC API Features web-grensesnitt (html/json)
 * [Øving 5](ovinger/oving-5.md) Utforsk OGC API Features med QGIS Desktop (bonus)
 * [Øving 6](ovinger/python.md) Utforsk OGC API Features med Python (bonus)
