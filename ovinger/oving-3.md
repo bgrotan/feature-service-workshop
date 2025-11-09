@@ -10,8 +10,8 @@ Workshop-datasettet er Administrative enheter, lasted ned fra geonorge
 ## 3.1 Etablere PostgreSQL i docker-compose.yml
 
 * Gjenbruk docker-compose.yml fra øving 2
-* Opprett mappen `pg_data` (*mkdir pg_data*) slik at vi kan ta vare på data lastet inn i PostgreSQL selv om vi stopper og starter docker-containerne.
-* Kopier inn følgende yml-struktur inn til docker-compose, legg det mellom **service** og **geoserver**.
+* Opprett mappen pg_data: `mkdir pg_data` - slik kan vi ta vare på data lastet inn i PostgreSQL selv om vi stopper og starter docker-containerne.
+* Kopier inn følgende yml-struktur inn til docker-compose, legg det *mellom* **service** og **geoserver**.
 
 ```
   postgres:
