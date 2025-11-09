@@ -42,9 +42,6 @@ Før du går i gang med øvingene, test at docker er satt opp riktig: `docker pu
 * [Øving 1](losninger/oving-1.md)
 * [Øving 2](losninger/oving-2.md)
 * [Øving 3](losninger/oving-3.md)
-* [Øving 4](losninger/oving-4.md)
-* [Øving 5](losninger/oving-5.md)
-* [Øving 6](losninger/python.md)
 
 ## Ressurser
 
