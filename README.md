@@ -21,6 +21,7 @@ Om du har GIT, kan du klone denne kodebrønnen slik:
 git clone https://github.com/bgrotan/feature-service-workshop.git
 cd feature-service-workshop
 ```
+Om du ikke har GIT-klient, kan du laste ned en ZIP-fil ved å klikke på **< > Code**-knappen, og deretter **Download ZIP**
 
 Før du går i gang med øvingene, test at docker er satt opp riktig: 
 ```
