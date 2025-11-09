@@ -10,7 +10,7 @@ services:
       - POSTGRES_PASSWORD=geoserver
       - POSTGRES_DB=geoserver
     volumes:
-      - ./pgdata:/var/lib/postgresql/data
+      - ./pgdata:/var/lib/postgresql
       - ./workshop-data:/tmp/workshop-data
     restart: unless-stopped
     healthcheck:
