@@ -13,5 +13,5 @@ services:
       - SKIP_DEMO_DATA=true
     volumes:
       # Optional: Persist GeoServer data directory to host
-      - ./geoserver_data:/opt/geoserver/data_dir
+      - ./geoserver_data:/opt/geoserver_data
     restart: unless-stopped

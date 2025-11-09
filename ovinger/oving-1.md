@@ -17,7 +17,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./data:/opt/geoserver/data_dir
+      - ./geoserver_data:/opt/geoserver_data
     environment:
       - GEOSERVER_ADMIN_PASSWORD=geoserver
     restart: unless-stopped
