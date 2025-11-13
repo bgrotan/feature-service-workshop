@@ -72,11 +72,14 @@ Start psql: `psql -U geoserver -p 5432 -W -h localhost -d geoserver`
 Passordet du oppgir, er det samme som du har definert for postgresql i *docker-compose.yml*
 
 Noen nyttige psql-kommandoer:
-* `\d` viser relasjoner: schema, navn, type (f.eks view, tabell, sequence) og hvem som har opprettet eller eier.
-* `\dn` lister alle database-schemas
-* `\dv` lister alle views
-* `\dt` lister alle tabeller
-* `\q` avslutter psql, men **exit** kan også brukes.
+```
+`\d` viser relasjoner: schema, navn, type (f.eks view, tabell, sequence) og hvem som har opprettet eller eier.
+'\d <schema>.<tabell>': viser kolonnenavn, datatyper, primær/fremmednøkler osv for en angitt tabell
+`\dn` lister alle database-schemas
+`\dv` lister alle views
+`\dt` lister alle tabeller
+`\q` avslutter psql, men **exit** kan også brukes.
+```
 
 Du skal nå laste inn filen Basisdata_0000_Norge_25833_Kommuner_PostGIS.sql.
 ` psql -U geoserver -p 5432 -W -h localhost -d geoserver -f /tmp/workshop-data/Basisdata_0000_Norge_25833_Kommuner_PostGIS.sql `
