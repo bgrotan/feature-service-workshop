@@ -5,7 +5,7 @@ du skal verifisere kjørende miljø gjennom nettleser og du skal legge til Featu
 
 ## 1.1 Etablere docker-compose.yml
 
-I workshop-mappen, lag en fil `docker-compose.yml` med innholdet under. Bytt ut `<versjon>` med 2.28.2
+I workshop-mappen, lag en fil `docker-compose.yml` med innholdet under. Bytt ut `<versjon>` med 2.28.0
 Lag også en katalog geoserver_data: `mkdir geoserver_data`, i samme mappe.
 
 ```
