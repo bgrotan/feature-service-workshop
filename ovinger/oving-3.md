@@ -82,8 +82,16 @@ Noen nyttige psql-kommandoer:
 ```
 
 Du skal nå laste inn filen Basisdata_0000_Norge_25833_Kommuner_PostGIS.sql.
-` psql -U geoserver -p 5432 -W -h localhost -d geoserver -f /tmp/workshop-data/Basisdata_0000_Norge_25833_Kommuner_PostGIS.sql `
-Du må i tillegg legge på en patch, da Postgres-dumpen lastet ned fra Geonorge ikke har definert primærnøkkel (primary key) for tabellene. 
+```
+# Denne kommandoen laster inn kurs-datasettet.
+psql -U geoserver -p 5432 -W -h localhost -d geoserver -f /tmp/workshop-data/Basisdata_0000_Norge_25833_Kommuner_PostGIS.sql 
+
+# Den andre kommandoen legger på nødvendige primærnøkler da Postgres-dumpen lastet ned fra Geonorge ikke har definert primærnøkkel (primary key) for tabellene.
+psql -U geoserver -p 5432 -W -h localhost -d geoserver -f /tmp/workshop-data/Basisdata_0000_Norge_25833_Kommuner_PostGIS-patch.sql
+```
+
+
+ 
 
 Start psql på nytt (uten `-f`) og sjekk at du har fått et nytt database-schema som er prefikset `kommuner` og eid av bruker `geoserver`
 For å liste ut alle tabeller i et bestemt schema kan du kombinere `\dt` og schema-navnet.
