@@ -25,6 +25,10 @@ Om du ikke har GIT-klient, kan du laste ned en ZIP-fil ved å klikke på **< > C
 
 Før du går i gang med øvingene, test at docker er satt opp riktig: 
 ```
+# Sjekk at Docker-servicen kjører
+docker ps
+
+# Sjekk at du får lastet ned et docker-image
 docker pull kartoza/postgis:13.0
 ```
 
