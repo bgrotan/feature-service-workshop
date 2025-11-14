@@ -83,6 +83,9 @@ Noen nyttige psql-kommandoer:
 
 Du skal nå laste inn filen Basisdata_0000_Norge_25833_Kommuner_PostGIS.sql.
 ```
+# Neste kommando gjøres fra skallet/kommandolinja. Bruk `exit` eller \q for å avslutte
+exit 
+
 # Denne kommandoen laster inn kurs-datasettet.
 psql -U geoserver -p 5432 -W -h localhost -d geoserver -f /tmp/workshop-data/Basisdata_0000_Norge_25833_Kommuner_PostGIS.sql 
 
