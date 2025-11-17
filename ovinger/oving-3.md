@@ -10,7 +10,7 @@ Workshop-datasettet er Administrative enheter, lasted ned fra geonorge
 ## 3.1 Etablere PostgreSQL i docker-compose.yml
 
 * Gjenbruk docker-compose.yml fra øving 2
-* Opprett mappen pg_data: `mkdir pg_data` - slik kan vi ta vare på data lastet inn i PostgreSQL selv om vi stopper og starter docker-containerne.
+* I kurs-folderen (utpakket zip-arkiv eller `git clone`), opprett mappen pg_data: `mkdir pg_data` - slik kan vi ta vare på data lastet inn i PostgreSQL selv om vi stopper og starter docker-containerne.
 * Kopier inn følgende yml-struktur inn til docker-compose, legg det *mellom* **services** og **geoserver**.
 
 ```
@@ -52,8 +52,12 @@ Fra forrige del-oppgave 3-1 har vi følgende volumer definert:
 Det første volumet sørger for at data som blir skrevet til PostgreSQL-databasen, også forblir lagret selv om containeren slås av.
 Det andre volumet gjør at vi tilgjengeliggjør kurs-data for containeren, slik at vi kan laste disse dataene inn i databasen 
 
-For å utføre denne oppgaven trenger vi nå at postgres-containeren kjører:
-`docker compose up -d`
+For å utføre denne oppgaven trenger vi nå at postgres-containeren kjører, ved først å stoppe `geoserver` og deretter starte både 
+Fra kommandolinje: 
+```
+docker-compose down
+docker compose up -d
+```
 
 Kjører du kommandoen `docker ps` skal du nå ha 2 containere kjørende. En heter **postgres**, den andre **geoserver**
 
@@ -81,7 +85,11 @@ Noen nyttige psql-kommandoer:
 `\q` avslutter psql, men **exit** kan også brukes.
 ```
 
-Du skal nå laste inn filen Basisdata_0000_Norge_25833_Kommuner_PostGIS.sql.
+Du skal nå laste inn filen Basisdata_0000_Norge_25833_Kommuner_PostGIS.sql samt en nødvendig patch/kode-fiks.
+
+Geoserver, LDProxy, Pygeoapi, Mapserver, PgFeatureserv - krever alle at tabeller med geometri skal ha definert en primærnøkkel.
+Patchen sørger for å legge på primærnøkkel for tabell-strukturene som ligger i filen *...POSTGIS.sql*
+
 ```
 # Neste kommando gjøres fra skallet/kommandolinja. Bruk `exit` eller \q for å avslutte
 exit 
@@ -93,9 +101,6 @@ psql -U geoserver -p 5432 -W -h localhost -d geoserver -f /tmp/workshop-data/Bas
 psql -U geoserver -p 5432 -W -h localhost -d geoserver -f /tmp/workshop-data/Basisdata_0000_Norge_25833_Kommuner_PostGIS-patch.sql
 ```
 
-
- 
-
 Start psql på nytt (uten `-f`) og sjekk at du har fått et nytt database-schema som er prefikset `kommuner` og eid av bruker `geoserver`
 For å liste ut alle tabeller i et bestemt schema kan du kombinere `\dt` og schema-navnet.
 `\dt kommuner<tab>`  (psql-klienten har tab-komplettering, så bare du begynner å skrive *kommuner* så finner psql ut av resten)
@@ -105,7 +110,12 @@ For å liste ut alle tabeller i et bestemt schema kan du kombinere `\dt` og sche
 * Verifiser at docker containeren kjører: 'docker ps'
 * Verifiser at geoserver er operativ ved å åpne nettleseren og gå til [http://localhost:8080/geoserver](http://localhost:8080/geoserver)
 
-Først skal vi lage oss et nytt workspace å lagre våre ting i.
+Logg inn med enten default brukernavn/passord (`admin/geoserver`), eller verdien du evt har satt i `docker-compose.yml`
+
+### Geoserver administrasjon (nettleser)
+
+Først skal vi lage oss et nytt workspace å lagre våre ting i. Åpne din favoritt-nettleser og gå til [Geoserver Admin](http://localhost:8080/geoserver)
+Husk å logge på med din admin-bruker (default: *admin* / *geoserver*, evt det du har overstyrt verdien med i  `docker-compose.yml`)
 * Under **Data** finner du **Workspaces**, og deretter **Add new workspace**. 
   * Under *navn* gir du verdien `administrativeenheter`, og gjerne la dette være default workspace
   * Under *Namespace URI* legger du verdien `https://sosi.geonorge.no/administrativeenheter`

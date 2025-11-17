@@ -24,6 +24,9 @@ services:
 
 ## 1.2 
 
+Åpne en terminal (kommandolinje), f.eks. `cmd.exe` og gå til mappen du har lagt kurs-filene i.
+Om du bruker Docker Desktop, sørg for at denne er startet før du går i gang.
+
 Start geoserver: `docker compose up -d`
 
 * Verifiser at docker containeren kjører: 'docker ps'

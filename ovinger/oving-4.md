@@ -23,7 +23,7 @@ finner du tegneregler for kommunegrenser. Vis/last ned SVG-filen for kommunegren
 
 Linjefarge for kommunegrenser (stroke) er #8a3e4e og linjetykkelse (stroke-width) er 2
 
-I Geoserver, under **Data**, åpne **Styles**. Opprett ny **Style*, med navn `kommune_grense` og workspace `administrativeenheter` og format `SLD`
+I Geoserver, under **Data**, åpne **Styles**. Opprett ny **Style**, med navn `kommune_grense` og workspace `administrativeenheter` og format `SLD`
 ``` 
 <?xml version="1.0" encoding="UTF-8"?>
 <StyledLayerDescriptor xmlns="http://www.opengis.net/sld"
@@ -54,13 +54,20 @@ I Geoserver, under **Data**, åpne **Styles**. Opprett ny **Style*, med navn `ko
 Klikk  **Valider** før du klikker **Save** for å lagre.
 Du kan også forhåndsvise hvordan stylen vil bli, ved å klikke på **Preview legend**
 
-Gå tilbake til **Layers** og publiser datasettet `grense` fra workspace `administrativeenheter`.
-Velg *compute from bounds* som sist, og under **Publishing** velger du den nye tegneregelen `administrativeenheter:kommune_grense`
+Gå tilbake til **Layers**, deretter publiser datasettet `grense` fra workspace `administrativeenheter` ved **Add a new layer**.
+
+Velg *compute from bounds* som sist.
+Åpne fanen **Publishing**, under **WMS Settings** velger du den nye tegneregelen `administrativeenheter:kommune_grense`
+
 
 * HTML [Map preview](http://localhost:8080/geoserver/wms/reflect?FORMAT=application%2Fopenlayers&LAYERS=administrativeenheter%3Agrense)
 * Data [HTML](http://localhost:8080/geoserver/ogc/features/v1/collections/administrativeenheter:grense/items?f=text%2Fhtml&limit=50)
 * Data [JSON](http://localhost:8080/geoserver/ogc/features/v1/collections/administrativeenheter:grense/items?f=application%2Fjson&limit=50)
-* Data [GeoJSON](http://localhost:8080/geoserver/ogc/features/v1/collections/administrativeenheter:grense/items?f=application%2Fgeojson&limit=50)
+* Data [GeoJSON](http://localhost:8080/geoserver/ogc/features/v1/collections/administrativeenheter:grense/items?f=application%2Fgeo%2Bjson&limit=50)
+
+NB! Administrative enheter kan være både *kommune* og *fylke*. Både *kommune* og *fylke* har *grenser*. 
+Om man ikke tenker seg om, kan man fort havne i navnekonflikt. Tittel på `grense` bør kanskje navnes `kommunegrense`, 
+slik at vi enklere kan skille på om det er `kommunegrense` eller `fylkegrense`. I databasen vil disse uansett være adskilt i egne schema.
 
 ## 4.3 Overstyr HTML-rendring
 
@@ -70,5 +77,15 @@ Geoserver bruker Freemarker som template-motor, både for WMS-tjenester og for O
 Om du vil, sjekk ut [HTML Templates](https://docs.geoserver.org/main/en/user/services/features/templates.html).
 Geoserver bruker Freemarker Template Engine for html-rendring, så om du vil dykke ned i detaljene kan det være lurt
 å sette seg inn i [Freemarker](https://freemarker.apache.org/).
+
+HTML Templates er hierarkiske. Du kan gjøre de universell for alle data-lagene (layers), eller du kan overstyre pr layer (`collection.ftl`)
+
+```
+# HTML Template for hoved landing-side
+mkdir geoserver_data/templates/ogc/features/v1
+cp workshop-data/templates/landingPage.ftl geoserver_data/templates/ogc/features/v1
+
+
+```
 
 Neste: [Øving 5](oving-5.md)
