@@ -116,11 +116,11 @@ Logg inn med enten default brukernavn/passord (`admin/geoserver`), eller verdien
 
 Først skal vi lage oss et nytt workspace å lagre våre ting i. Åpne din favoritt-nettleser og gå til [Geoserver Admin](http://localhost:8080/geoserver)
 Husk å logge på med din admin-bruker (default: *admin* / *geoserver*, evt det du har overstyrt verdien med i  `docker-compose.yml`)
-* Under **Data** finner du **Workspaces**, og deretter **Add new workspace**. 
+* Under **New** finner du **Add new workspace**
   * Under *navn* gir du verdien `administrativeenheter`, og gjerne la dette være default workspace
   * Under *Namespace URI* legger du verdien `https://sosi.geonorge.no/administrativeenheter`
   * Klikk Save
-* I venstre-menyen klikk på **Stores** under **Data**. Velg deretter **Add new Store** og så **PostGIS**.
+* I venstre-menyen klikk på **New**, velg deretter **Add new store** og så **PostGIS**.
   * Om du valgte [x] 'Default workspace' i forrige steget, vil du se at 'administrativeenheter' nå dukket opp som forhåndsvalgt workspace.
   * Gi **kommuner** som *Data Source Name*, **Norske kommuner 2025** som *Description* og la den være **enabled**
   * Under oppkoblingsparametre, bruk de samme parametrene du har brukt i docker-compose.yml
@@ -134,8 +134,8 @@ Husk å logge på med din admin-bruker (default: *admin* / *geoserver*, evt det 
 
 ## 3.4 Legg til Kommuner som nytt data layer
 
-Under **Data** og **Layers**, velg **Add new Layer**.
-I nedtrekksmenyen skal du finne din kombinasjon av workspace+datastore (administrative:kommuner)
+Under **New**, velg **Add new Layer**.
+I nedtrekksmenyen skal du finne din kombinasjon av workspace+datastore (administrativeenheter:kommuner)
 Om du har husket på å laste inn kurs-data, skal du nå få opp 5 potensielle Layers fra datastore kommuner
 Klikk *publish* på `kommune`
 
