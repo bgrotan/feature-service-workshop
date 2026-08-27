@@ -29,6 +29,7 @@ Før du går i gang med øvingene, test at docker er satt opp riktig:
 docker ps
 
 # Sjekk at du får lastet ned et docker-image
+docker pull docker.osgeo.org/geoserver:3.0.0
 docker pull kartoza/postgis:13.0
 ```
 
