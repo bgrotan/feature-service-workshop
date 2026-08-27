@@ -19,7 +19,7 @@ og hvordan du kan navigere deg til neste "side"/"page" med data.
 ## 4.2 Lag tegneregel for kommunegrenser
 
 På [Geonorge](https://register.geonorge.no/kartografi/files/Details?SystemId=ca6c1dc8-b3d5-431b-a7c1-3425a87c38a2) register for Digital kartografi
-finner du tegneregler for kommunegrenser. Vis/last ned SVG-filen for kommunegrenser og åpne den i en tekst-editor.
+finner du tegneregler for kommunegrenser. Vis/last ned SLD-filen for kommunegrenser og åpne den i en tekst-editor.
 
 Linjefarge for kommunegrenser (stroke) er #8a3e4e og linjetykkelse (stroke-width) er 2
 
