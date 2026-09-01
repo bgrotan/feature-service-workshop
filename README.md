@@ -63,6 +63,7 @@ docker pull kartoza/postgis:13.0
 * [Freemarker Template](https://freemarker.apache.org/index.html)
 * [PostgreSQL](https://www.postgresql.org/)
 * [PostGIS](https://www.postgis.net)
+* [Public LDProxy demo datasets for OGC API Features](https://demo.ldproxy.net/)
 
 ## Disclaimer
 
